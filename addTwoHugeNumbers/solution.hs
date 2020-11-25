@@ -2,8 +2,9 @@
 -- data ListNode a = ListNode { val :: a
 --                            , next :: ListNode a
 --                            } | Nil deriving Show
---
+
 import Data.List
+
 addTwoHugeNumbers a b = returnValue 
     where numberA = read $ formatToNumber a 
           numberB = read $ formatToNumber b

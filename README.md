@@ -1,4 +1,4 @@
-# CodeSignal Tasks
+# Code Signal Tasks
 
 These are the solutions of the CodeSignal Tasks I am doing.
 

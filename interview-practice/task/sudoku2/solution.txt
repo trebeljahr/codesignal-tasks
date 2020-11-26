@@ -1,0 +1,38 @@
+def sudoku2(grid):
+    for row in range(len(grid)):
+        rowSet = {'.'}
+        for num in grid[row]: 
+            if num == ".": continue
+            if num in rowSet:
+                print("Error in rows")
+                return False
+            else:
+                rowSet.add(num)
+    for col in range(len(grid)):
+        colSet = {'.'}
+        column = [val[col] for val in grid]
+        print(column)
+        for num in column:
+            if num == ".": continue 
+            if num in colSet:
+                print("Error in cols")
+                return False
+            else:
+                colSet.add(num)
+                
+    for i in range(3):
+        for j in range(3):
+            # print(grid[i*3][:3])
+            # print(grid[i*3+1][:3])
+            # print(grid[i*3+2][:3])
+            square = [*grid[i*3][j*3:j*3+3], *grid[i*3+1][j*3:j*3+3], *grid[i*3+2][j*3:j*3+3]]
+            squareSet = {'.'}
+            for num in square:
+                if num == ".": continue 
+                if num in squareSet:
+                    print("Error in squareSet")
+                    return False
+                else:
+                    squareSet.add(num)
+    return True
+     

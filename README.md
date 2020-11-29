@@ -1,4 +1,4 @@
-# Code Signal Tasks
+# Code Signal Tasks ![CodeSignal Polyglot Badge](https://github.com/trebeljahr/codesignal-tasks/blob/main/polyglot-badge.svg?raw=true)
 
 These are the solutions of the CodeSignal Tasks I am doing.
 

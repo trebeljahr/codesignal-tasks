@@ -1,0 +1,25 @@
+def minesweeper(matrix):
+    out = []
+    for i in range(len(matrix)):
+        out.append([])
+        for j in range(len(matrix[0])):
+            sum = 0
+            for a in [-1, 0, 1]:
+                for b in [-1, 0, 1]:
+                    add = getSummand(a, b, i, j, matrix)
+                    sum += add
+            out[i].append(sum)
+    return out
+                                            
+def getSummand(a, b, i, j, matrix):
+    isLeftBorder = i + a < 0
+    isRightBorder = i + a > len(matrix) - 1
+    isTopBorder = j + b < 0 
+    isBotBorder = j + b> len(matrix[0]) - 1 
+    if isLeftBorder or isRightBorder or isTopBorder or isBotBorder or (a == 0 and b == 0): 
+        return 0
+    elif matrix[i + a][j + b] == False:
+        return 0 
+    else: 
+        return 1 
+

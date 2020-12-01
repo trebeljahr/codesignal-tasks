@@ -1,0 +1,10 @@
+def avoidObstacles(inputArray):
+    obstacles = sorted(inputArray)
+    steps = 1
+    while isColliding(steps, obstacles):
+        steps += 1 
+    return steps
+
+def isColliding(steps, obstacles):
+    collidesWith = filter(lambda obstacle: obstacle % steps == 0, obstacles)
+    return len(list(collidesWith)) > 0

@@ -9,8 +9,6 @@ function almostIncreasingSequence(sequence) {
             if (secondTry) return false
             const elem3 = i + 2 <= sequence.length - 1 ? sequence[i + 2] : Infinity
             const elem4 = i - 1 >= 0 ? sequence[i - 1] : -Infinity
-            console.log(elem4, elem1, elem2, elem3)
-            console.log(secondTry)
             if (!(elem3 > elem2 && elem2 > elem4 || elem3 > elem1 && elem1 > elem4)) {
                 return false
             } 

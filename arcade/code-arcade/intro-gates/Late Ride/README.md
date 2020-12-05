@@ -37,7 +37,7 @@
 <p><strong>[Clojure] Syntax Tips</strong></p>
 <pre><code class="language-clojure"><span class="hljs-comment">; Prints help message to the console</span>
 <span class="hljs-comment">; Returns a string</span>
-(<span class="hljs-name"><span class="hljs-builtin-name">defn</span></span> helloWorld [name] 
+(<span class="hljs-keyword">defn</span> <span class="hljs-title">helloWorld</span> [name] 
   (<span class="hljs-name">println</span> <span class="hljs-string">"This prints to the console when you Run Tests"</span>)
   (<span class="hljs-name"><span class="hljs-builtin-name">apply</span></span> str (<span class="hljs-name"><span class="hljs-builtin-name">concat</span></span> <span class="hljs-string">"Hello, "</span> name)))
 </code></pre>

@@ -31,7 +31,7 @@
 <p><strong>[Python 3] Syntax Tips</strong></p>
 <pre><code class="language-python"><span class="hljs-comment"># Prints help message to the console</span>
 <span class="hljs-comment"># Returns a string</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">helloWorld</span><span class="hljs-params">(name)</span>:</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">helloWorld</span>(<span class="hljs-params">name</span>):</span>
     print(<span class="hljs-string">"This prints to the console when you Run Tests"</span>)
     <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello, "</span> + name
 

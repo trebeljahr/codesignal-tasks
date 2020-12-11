@@ -1,0 +1,1 @@
+reachNextLevel experience threshold reward = reward + experience >= threshold
